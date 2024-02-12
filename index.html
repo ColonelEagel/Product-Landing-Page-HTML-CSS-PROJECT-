@@ -6,32 +6,45 @@
     <title>Storky HTML & CSS project</title>
     <!--__________________________________ rendering all elements normally  __________________________________-->
     <link rel="stylesheet" href="css/Normaliz.css" />
-    <!--__________________________________ Font Awesome Library __________________________________-->
-    <link rel="stylesheet" href="css/all.min.css" />
     <!--__________________________________ Main css folder __________________________________-->
-    <link rel="stylesheet" href="css/Style.min.css" />
+    <link rel="stylesheet" href="css/Style.css" />
   </head>
 
   <body>
+    <!-- __________________________________ Start Header __________________________________ -->
     <header id="header" class="container">
-      <img
-        src="/media/logo-background.png"
-        alt="Storky app logo"
-        id="header-img"
-        width="50px"
-      />
+      <a href="#">
+        <img
+          src="/media/logo-background.png"
+          alt="Storky app logo"
+          id="header-img"
+          width="50px"
+        />
+      </a>
       <nav id="nav-bar">
-        <a href="#Features" class="nav-link"> Features</a>
-        <a href="#video" class="nav-link">How It Works</a>
-        <a href="#Pricing" class="nav-link">Pricing</a>
+        <ul class="menu">
+          <li><a href="#Features" class="nav-link"> Features</a></li>
+          <li><a href="#video" class="nav-link">How It Works</a></li>
+          <li><a href="#Pricing" class="nav-link">Pricing</a></li>
+        </ul>
       </nav>
     </header>
+    <!-- __________________________________ End Header __________________________________ -->
 
-    <div class="container">
-      <form action="https://www.freecodecamp.com/email-submit" method="post">
+    <!-- __________________________________ Start Form __________________________________ -->
+
+    <section class="container form-container">
+      <h1>contact us</h1>
+      <h2>Let&apos;s Keep In touch</h2>
+      <form
+        id="form"
+        action="https://www.freecodecamp.com/email-submit"
+        method="post"
+      >
         <label for="email">Email:</label>
         <input
           name="email"
+          id="email"
           type="email"
           class="email"
           placeholder="Enter your email"
@@ -39,6 +52,21 @@
         />
         <input type="submit" id="submit" value="Submit" />
       </form>
-    </div>
+    </section>
+    <!-- __________________________________ End Form __________________________________ -->
+
+    <!-- __________________________________ Start video __________________________________ -->
+    <section class="videoSection">
+      <div class="section-title">
+        <h2>Design <span>Your Course</span> With an Outstanding Experience</h2>
+        <p>Do your teaching and leave all the hassle on our team</p>
+      </div>
+      <video src="media/Full-Tutorial-1.mp4" id="video" controls>
+        something went wrong with displaying the video , try to reload or use
+        another browser
+      </video>
+    </section>
+
+    <!-- __________________________________ End video __________________________________ -->
   </body>
 </html>

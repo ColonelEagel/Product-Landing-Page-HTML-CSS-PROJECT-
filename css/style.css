@@ -1,69 +1,145 @@
-    /*__________________________________ Variables __________________________________*/
-    :root {
-        --main-color: #19c8fa;
-        --transparent-color: rgb(15 116 143 / 70%);
-        --Font-Color: white;
-        --Font-Color2: #777;
-        --section-padding: 100px;
+/*__________________________________ Variables __________________________________*/
+:root {
+    --main-color: #19c8fa;
+    --second-color: #e01b84;
+    --second-color-hover: #7c0444;
+    --transparent-color: rgb(15 116 143 / 70%);
+    --Font-Color: white;
+    --Font-Color2: #777;
+    --section-padding: 100px;
+}
 
-    }
+/*__________________________________The Start Of Media quarry __________________________________*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    /*__________________________________The Start Of Media quarry __________________________________*/
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+body {
+    font-family: "Open Sans", sans-serif;
+}
 
-    body {
-        font-family: "Open Sans", sans-serif;
-    }
+html {
+    scroll-behavior: smooth;
+}
 
-    html {
-        scroll-behavior: smooth;
-    }
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
 
-    a {
-        text-decoration: none;
-        background-color: transparent;
-        color: black;
-    }
+ul {
+    list-style: none;
+}
 
-    ul {
-        list-style: none;
-    }
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+section {
+    padding: var(--section-padding) 0;
+}
+
+/*__________________________________The Start Of Media quarry __________________________________*/
+/*__________________________________Small __________________________________*/
+@media (min-width: 768px) {
     .container {
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 750px;
     }
+}
 
-    /*__________________________________The Start Of Media quarry __________________________________*/
-    /*__________________________________Small __________________________________*/
-    @media (min-width:768px) {
-        .container {
-            width: 750px;
-        }
+/*__________________________________MEdium __________________________________*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
     }
+}
 
-    /*__________________________________MEdium __________________________________*/
-    @media (min-width:992px) {
-        .container {
-            width: 970px;
-        }
+/*__________________________________Large  __________________________________*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
     }
+}
 
-    /*__________________________________Large  __________________________________*/
-    @media (min-width:1200px) {
-        .container {
-            width: 1170px;
-        }
-    }
+/*__________________________________The End Of Media quarry __________________________________*/
+/*__________________________________End Global rules __________________________________*/
 
-   
+/*__________________________________ Start Header __________________________________*/
 
-    /*__________________________________The End Of Media quarry __________________________________*/
-    /*__________________________________End Global rules __________________________________*/
-    /*__________________________________ start Components  __________________________________*/
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#nav-bar a {
+    margin: 0 5px;
+}
+
+#nav-bar a:hover {
+    color: var(--main-color);
+}
+
+#nav-bar a:active {
+    color: var(--main-color);
+}
+
+.menu {
+    display: flex;
+}
+
+/*__________________________________ End Header __________________________________*/
+
+/*__________________________________ Start Form __________________________________*/
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#submit {
+    padding: 5px;
+    border: 1px solid #e01b84;
+    background-color: var(--second-color);
+    color: var(--Font-Color);
+    transition: background-color .5s;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+#email {
+    padding: 9px;
+    border: 1px solid #e01b84;
+    transition: background-color .5s;
+    color: var(--Font-Color2);
+}
+
+#submit:hover {
+    background-color: var(--second-color-hover);
+    outline: none;
+    cursor: pointer;
+}
+
+/*__________________________________ End Header __________________________________*/
+/*__________________________________ Start video __________________________________*/
+
+
+#video {
+    width: 100%;
+    margin: auto;
+}
+
+/*__________________________________ End video __________________________________*/
