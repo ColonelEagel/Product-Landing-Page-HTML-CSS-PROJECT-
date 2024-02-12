@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storky HTML & CSS project</title>
+    <!--__________________________________ rendering all elements normally  __________________________________-->
+    <link rel="stylesheet" href="css/Normaliz.css" />
+    <!--__________________________________ Font Awesome Library __________________________________-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--__________________________________ Main css folder __________________________________-->
+    <link rel="stylesheet" href="css/Style.min.css" />
+  </head>
+
+  <body>
+    <header id="header" class="container">
+      <img
+        src="/media/logo-background.png"
+        alt="Storky app logo"
+        id="header-img"
+        width="50px"
+      />
+      <nav id="nav-bar">
+        <a href="#Features" class="nav-link"> Features</a>
+        <a href="#video" class="nav-link">How It Works</a>
+        <a href="#Pricing" class="nav-link">Pricing</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <form action="https://www.freecodecamp.com/email-submit" method="post">
+        <label for="email">Email:</label>
+        <input
+          name="email"
+          type="email"
+          class="email"
+          placeholder="Enter your email"
+          required
+        />
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

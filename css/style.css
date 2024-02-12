@@ -1,0 +1,69 @@
+    /*__________________________________ Variables __________________________________*/
+    :root {
+        --main-color: #19c8fa;
+        --transparent-color: rgb(15 116 143 / 70%);
+        --Font-Color: white;
+        --Font-Color2: #777;
+        --section-padding: 100px;
+
+    }
+
+    /*__________________________________The Start Of Media quarry __________________________________*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Open Sans", sans-serif;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: transparent;
+        color: black;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*__________________________________The Start Of Media quarry __________________________________*/
+    /*__________________________________Small __________________________________*/
+    @media (min-width:768px) {
+        .container {
+            width: 750px;
+        }
+    }
+
+    /*__________________________________MEdium __________________________________*/
+    @media (min-width:992px) {
+        .container {
+            width: 970px;
+        }
+    }
+
+    /*__________________________________Large  __________________________________*/
+    @media (min-width:1200px) {
+        .container {
+            width: 1170px;
+        }
+    }
+
+   
+
+    /*__________________________________The End Of Media quarry __________________________________*/
+    /*__________________________________End Global rules __________________________________*/
+    /*__________________________________ start Components  __________________________________*/
