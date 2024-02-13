@@ -203,3 +203,29 @@ label {
 }
 
 /*__________________________________ End video __________________________________*/
+/*__________________________________ Start pricing __________________________________*/
+
+.pricing .card {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+}
+
+.pricing .card .card-title {
+    margin: 20px;
+}
+
+
+
+/* __________________________________ End pricing __________________________________ --> */
+/* __________________________________ start footer __________________________________ --> */
+
+footer {
+    background-color: var(--second-color);
+    color: var(--Font-Color);
+    padding: 20px;
+    text-align: center;
+}
+
+/* __________________________________ End footer __________________________________ --> */
